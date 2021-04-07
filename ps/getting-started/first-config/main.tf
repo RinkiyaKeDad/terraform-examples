@@ -7,7 +7,7 @@ variable "aws_secret_key" {}
 variable "private_key_path" {} # corresponds to the key pair that is in AWS
 variable "key_name" {}         # refers to key pair that exists in AWS so that we can SSH into the instance once its created
 variable "region" {
-  default = "us-east-1" # default value for this variable
+  default = "us-east-2" # default value for this variable
 }
 
 ##################################################################################
