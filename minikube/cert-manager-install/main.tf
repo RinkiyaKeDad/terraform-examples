@@ -5,6 +5,10 @@ provider "helm" {
 }
 
 resource "helm_release" "cert-manager" {
-  name  = "jetstack"
-  chart = "https://charts.jetstack.io"
+  name             = "jetstack"
+  repository       = "https://charts.jetstack.io"
+  chart            = "cert-manager"
+  namespace        = "cert-manager"
+  create_namespace = true
+  version          = "v1.3.1"
 }
